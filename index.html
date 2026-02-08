@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Border-radius Previewer</title>
+</head>
+<body>
+    <!-- semantic html main container -->
+    <main class="container">
+        
+        <h1>Border-radius Previewer</h1>
+        <div class="controls">
+            
+            <!-- Cada label e input para cada canto do box, com um span para mostrar o valor atual -->
+            <!-- topLeft -->
+            <label for="topLeft">Top Left:</label>
+            <input type="range" id="topLeft" name="topLeft" min="0" max="100" value="0">
+            <span id="topLeftValue">0%</span>    
+
+            <!-- topRight -->
+            <label for="topRight">Top Right:</label>
+            <input type="range" id="topRight" name="topRight" min="0" max="100" value="0">
+            <span id="topRightValue">0%</span>
+
+            <!-- bottomRight -->
+            <label for="bottomRight">Bottom Right:</label>
+            <input type="range" id="bottomRight" name="bottomRight" min="0" max="100" value="0">
+            <span id="bottomRightValue">0%</span>
+            
+            <!-- bottomLeft -->
+            <label for="bottomLeft">Bottom Left:</label>
+            <input type="range" id="bottomLeft" name="bottomLeft" min="0" max="100" value="0">
+            <span id="bottomLeftValue">0%</span>
+        </div>
+    </main>
+    <!-- section para mostrar o código css -->
+    <section class="code-section">
+        <h2>CSS Code:</h2>
+        <pre id="cssCode">border-radius: 0% 0% 0% 0%</pre>
+        <!-- button para copiar o código css para a área de transferência -->
+        <button id="copyButton">Copy CSS</button>
+    </section>
+
+    <!-- article para mostrar a box e o resultado do código css -->
+    <article class="result-section">
+        <h2>Result:</h2>
+        <div class="result-box" id="resultBox"></div>
+    </article>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
