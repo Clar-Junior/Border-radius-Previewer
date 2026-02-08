@@ -12,16 +12,18 @@ body{
     background-color: #f0f0f0;
 }
 .controls {
-    dysplay: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 20px;
-    width: 300px;
-    height: 150px;
-    background-color: #ffffff;
-    padding: 20px;
+    margin-right: 20px;
+    
+}
+.controls > div > label{
+    margin-right: 20px;
 }
 input[type="range"] {
     width: 250px;
@@ -35,14 +37,14 @@ label {
     flex-direction: column;
     align-items: center;
     justify-content: center;;
-    height: 200px;
 }
 .result-box {
-    width: 100px;
-    height: 100px;
-    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #6b8ce3, #3859c4, #2a3e9c, #1e2a6b);
     border-radius: 0;
-    border: 5px solid #3859c4;
+    border: 0px solid #3859c4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .code-section {
     display: flex;

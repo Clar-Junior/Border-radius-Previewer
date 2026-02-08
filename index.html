@@ -11,28 +11,37 @@
     <main class="container">
         
         <h1>Border-radius Previewer</h1>
-        <div class="controls">
+        <div class="controls" id="controls">
             
             <!-- Cada label e input para cada canto do box, com um span para mostrar o valor atual -->
             <!-- topLeft -->
-            <label for="topLeft">Top Left:</label>
-            <input type="range" id="topLeft" name="topLeft" min="0" max="100" value="0">
-            <span id="topLeftValue">0%</span>    
+             <div>
+
+                 <label for="topLeft">Top Left:</label>
+                 <input type="range" id="topLeft" name="topLeft" min="0" max="100" value="0">
+                 <span id="topLeftValue">0%</span>    
+            </div>
 
             <!-- topRight -->
-            <label for="topRight">Top Right:</label>
-            <input type="range" id="topRight" name="topRight" min="0" max="100" value="0">
-            <span id="topRightValue">0%</span>
+            <div>
+                <label for="topRight">Top Right:</label>
+                <input type="range" id="topRight" name="topRight" min="0" max="100" value="0">
+                <span id="topRightValue">0%</span>
+            </div>
+
+            <!-- bottomLeft -->
+             <div>
+                 <label for="bottomLeft">Bottom Left:</label>
+                 <input type="range" id="bottomLeft" name="bottomLeft" min="0" max="100" value="0">
+                 <span id="bottomLeftValue">0%</span>
+             </div>
 
             <!-- bottomRight -->
-            <label for="bottomRight">Bottom Right:</label>
-            <input type="range" id="bottomRight" name="bottomRight" min="0" max="100" value="0">
-            <span id="bottomRightValue">0%</span>
-            
-            <!-- bottomLeft -->
-            <label for="bottomLeft">Bottom Left:</label>
-            <input type="range" id="bottomLeft" name="bottomLeft" min="0" max="100" value="0">
-            <span id="bottomLeftValue">0%</span>
+            <div>
+                 <label for="bottomRight">Bottom Right:</label>
+                 <input type="range" id="bottomRight" name="bottomRight" min="0" max="100" value="0">
+                 <span id="bottomRightValue">0%</span>
+             </div>
         </div>
     </main>
     <!-- section para mostrar o código css -->

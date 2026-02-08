@@ -10,6 +10,7 @@ const bottomLeftValue = document.getElementById('bottomLeftValue');
 const cssCode = document.getElementById('cssCode');
 const notification = document.getElementById('notification');
 const copyButton = document.getElementById('copyButton');
+const controls = document.getElementById('controls');
 
 function updateBorderRadius() {
     const tl = topLeft.value;
@@ -18,6 +19,7 @@ function updateBorderRadius() {
     const bl = bottomLeft.value;
 
     resultBox.style.borderRadius = `${tl}px ${tr}px ${br}px ${bl}px`;
+    controls.style.borderRadius = `${tl}px ${tr}px ${br}px ${bl}px`;
     cssCode.textContent = `border-radius: ${tl}px ${tr}px ${br}px ${bl}px;`;
     topLeftValue.textContent = `${tl}px`;
     topRightValue.textContent = `${tr}px`;
